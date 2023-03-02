@@ -1,0 +1,86 @@
+{"intents": [
+        {"tag": "greeting",
+         "patterns": ["Hi anyone there", "How are you", "Is there anyone?","Hey", "Hello"],
+         "responses": ["Hello,thanks for asking ", "Welcome,Glad to see you ", "Hi i am bot, how can I help you?"],
+         "context": [""]
+        },
+
+        {"tag": "options",
+         "patterns": ["How could you help me?", "What you can do?", "What help you will give ?", "How you can be helpful?"],
+         "responses": ["Send your searching product shelf numbers", "support to find the location by sending the shelf numbers of products"],
+         "context": [""]
+        },
+
+        {"tag": "noanswer",
+         "patterns": [],
+         "responses": ["Sorry, i can't understand you", "Please give me more info i didn't get"],
+         "context": [""]
+        },
+
+        {"tag": "payments",
+         "patterns": ["Do you accept credit card payments?", "Do you accept Mastercard?", "Are you accept cash only?" ],
+         "responses": ["We accept VISA, Mastercard", "We accept credit cards"],
+         "context": [""]
+        },
+
+        {"tag": "diary_products",
+         "patterns": ["I want diary products", "diary products for kids", "diary products", "Milk items", "milk products" ],
+         "responses": ["Please provide the specific diary products and enter view to obtain the shelf number"],
+         "context": ["search_diary products"]
+        },
+
+        {"tag": "milk_search",
+         "patterns": ["I want to search for vanila milkshake", "milkshake", "butter", "curd", "cheese" ],
+         "responses": ["Shelf number - 4"],
+         "context": ["search_diary products"]
+        },
+
+        {"tag": "apple_search",
+         "patterns": ["I want to search for grapes","apples", "grapes", "orange", "oranges", "banana" ],
+         "responses": ["Shelf number - 3"],
+         "context": ["fruit_search"]
+        },
+
+        {"tag": "veg_search",
+         "patterns": ["I want to search for tomato", "tomato", "carrot", "cabbage" , "potato","brinjal"],
+         "responses": ["Shelf number - 2"],
+         "context": ["veg_search"]
+        },
+
+        {"tag": "dry_search",
+         "patterns": ["I want to search for greengram", "sugar", "flour", "dhal" ],
+         "responses": ["Shelf number - 1"],
+         "context": ["dry_search"]
+        },
+
+        {"tag": "vegetable_search",
+         "patterns": ["I want to search for vegetables", "vegetables for kids", "veg items", "green leaves", "greem items" ],
+         "responses": ["Please provide the specific vegetable and enter view to obtain the shelf number"],
+         "context": ["search_vegetables"]
+        },
+
+        {"tag": "fruit_search",
+         "patterns": ["I want to search for fruits", "fruits for kids", "fruit items", "green fruits", "plantain" ],
+         "responses": ["Please provide the specific fruit name and enter view to obtain the shelf number"],
+         "context": ["search_fruit"]
+        },
+
+        {"tag": "dry_product_search",
+         "patterns": ["I want to search for dry products", "cooking products", "dry kichen things", "ingredients", "cooking ingredients" ],
+         "responses": ["Please provide the specific dry products and enter view to obtain the shelf number"],
+         "context": ["search_dry products"]
+        },
+
+        {"tag": "goodbye",
+         "patterns": ["Bye", "See you later", "Goodbye", "Nice chatting to you, bye", "Till next time"],
+         "responses": ["See you!", "Have a nice day", "Bye! Come back again soon."],
+         "context": [""]
+        },
+
+        {"tag": "thanks",
+         "patterns": ["Thanks", "Thank you", "That's helpful", "Awesome,thank you for the great help", "Thanks for helping me"],
+         "responses": ["Happy to help you!", "Welcome!", "It's My pleasure"],
+         "context": [""]
+        }
+    ]
+}
